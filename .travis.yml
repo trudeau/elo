@@ -1,0 +1,11 @@
+language: java
+jdk:
+- oraclejdk7
+- openjdk7
+- openjdk6
+after_success:
+- mvn deploy --settings settings.xml
+env:
+  global:
+  - secure: AaBO79zDkj8/XhOYsLja3JZ+BHKRmFUrZlYpzMSYNEM5i5u18FM0c+kok8BdBHIc3iSPBeCVcDpR6kpy7Uf3qAEDUvtULZzL8+KIBb3I2I7l86VVSHYh74vw5Qq70HOMOcLfOleo1tn3E1Okos44R9IV1+C5UY/+cST7nsgp2pQ=
+  - secure: Vmh3vsdkQ7SCJnNgYpZs7Zi12d9iU0Ua2+OvzuVRIs0IzGtZqg+akii/zn+cljM+d/1yOZzp4dIhJ0gIQFA91JjlZa444r1OwRVkT4UeIGTLr39tHxw4B5wS0pCI13btmbRBiK9E10MDMpv7AYSwLyP+hVeP70wT4JwYxt9QtZ8=
